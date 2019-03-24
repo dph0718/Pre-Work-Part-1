@@ -1,4 +1,5 @@
 /* Global resets */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -12,6 +13,7 @@ body {
 }
 
 /* Fonts */
+
 h1 {
 	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
 	font-size: 2.5em;
@@ -40,3 +42,146 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+:root {
+	--blue: #20A1D4;
+	--green: #1CBC2C;
+	--orange: #EF5F3C;
+	--black: #424242;
+	--grey: #777;
+	--light-grey: #eaeaea;
+}
+
+.container2 {
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	font-size: 0.8em;
+	margin: 2em auto;
+	width: 303px;
+	text-align: center;
+	text-align: left;
+	padding: 20px;
+}
+
+.donation-card {
+	border: 1px #eaeaea solid;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: var(--grey);
+	padding: 17px;
+	box-shadow: 0 2px rgba(119, 119, 119, 0.1);
+}
+
+.donation-card p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: 20px;
+	font-size: 1em;
+}
+
+.red-bold {
+	color: var(--orange);
+	font-weight: bold;
+}
+
+.link {
+	color: var(--blue);
+	font-style: italic;
+}
+
+.bubble-pointer {
+	height: 20px;
+	width: 20px;
+	background-color: var(--black);
+	/* background-color: green; */
+	transform: rotate(45deg) translate(-50%, -50%);
+	position: absolute;
+	right: 24px;
+	bottom: -16px;
+}
+.amount-needed-bubble {
+	position: relative;
+	color: white;
+	height: 44px;
+	background-color: var(--black);
+	border-radius: 3px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 12px;
+	font-size: 1.2em;
+}
+
+.on-top {
+	z-index: 3;
+}
+
+
+#progress-bar {
+	height: 11px;
+	width: 100%;
+	/* background-color: var(--light-grey); */
+	border: 1px solid var(--light-grey);
+	border-bottom: none;
+	box-shadow: inset 0 2px rgba(119, 119, 119, 0.1)
+}
+
+#progress-bar-fill {
+	background-color: var(--orange);
+	width: 193px;
+	height: 100%;
+	border-top: 2px solid rgba(253, 123, 2, 1);
+}
+
+.row-form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-item {
+	height: 43px;
+	width: 104px;
+	border-radius: 3px;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	border: 1px solid var(--light-grey);
+}
+
+#give-button {
+	color: white;
+	background-color: var(--green);
+}
+
+#donation-amount {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	align-items: center;
+	padding: 8px;
+}
+
+#donation-amount input {
+	border: none;
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 100%;
+	padding-left: 8px;
+}
+
+.button-option {
+	height: 34px;
+	width: 122px;
+	margin-top: 12px;
+	border-radius: 3px;
+	color: var(--grey);
+	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+	font-weight: bold;
+	border: 1px solid var(--light-grey);
+	background-color: #FAFAFA;
+	box-shadow: 0 2px rgba(119, 119, 119, 0.2);
+}
